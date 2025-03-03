@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "fMOB+adub4U=",
+  "dgSpecHash": "hq1tPYn7kX4=",
   "success": true,
-  "projectFilePath": "C:\\Users\\donof\\OneDrive\\Documents\\Uni Notes\\Web Development\\CourseWork1\\WeaponShop\\WeaponShop.csproj",
+  "projectFilePath": "C:\\Users\\donof\\OneDrive\\Documents\\Uni.Notes\\WebDevelopment\\CourseWork1\\WeaponShop\\WeaponShop.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\donof\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\donof\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",

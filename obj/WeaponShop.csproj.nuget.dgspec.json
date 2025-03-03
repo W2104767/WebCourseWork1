@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\donof\\OneDrive\\Documents\\Uni Notes\\Web Development\\CourseWork1\\WeaponShop\\WeaponShop.csproj": {}
+    "C:\\Users\\donof\\OneDrive\\Documents\\Uni.Notes\\WebDevelopment\\CourseWork1\\WeaponShop\\WeaponShop.csproj": {}
   },
   "projects": {
-    "C:\\Users\\donof\\OneDrive\\Documents\\Uni Notes\\Web Development\\CourseWork1\\WeaponShop\\WeaponShop.csproj": {
+    "C:\\Users\\donof\\OneDrive\\Documents\\Uni.Notes\\WebDevelopment\\CourseWork1\\WeaponShop\\WeaponShop.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\donof\\OneDrive\\Documents\\Uni Notes\\Web Development\\CourseWork1\\WeaponShop\\WeaponShop.csproj",
+        "projectUniqueName": "C:\\Users\\donof\\OneDrive\\Documents\\Uni.Notes\\WebDevelopment\\CourseWork1\\WeaponShop\\WeaponShop.csproj",
         "projectName": "WeaponShop",
-        "projectPath": "C:\\Users\\donof\\OneDrive\\Documents\\Uni Notes\\Web Development\\CourseWork1\\WeaponShop\\WeaponShop.csproj",
+        "projectPath": "C:\\Users\\donof\\OneDrive\\Documents\\Uni.Notes\\WebDevelopment\\CourseWork1\\WeaponShop\\WeaponShop.csproj",
         "packagesPath": "C:\\Users\\donof\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\donof\\OneDrive\\Documents\\Uni Notes\\Web Development\\CourseWork1\\WeaponShop\\obj\\",
+        "outputPath": "C:\\Users\\donof\\OneDrive\\Documents\\Uni.Notes\\WebDevelopment\\CourseWork1\\WeaponShop\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\donof\\AppData\\Roaming\\NuGet\\NuGet.Config"
