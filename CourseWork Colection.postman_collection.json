@@ -1,0 +1,2591 @@
+{
+	"info": {
+		"_postman_id": "eb8cbaf7-b27e-4465-b409-40556e2912b0",
+		"name": "CourseWork Colection",
+		"description": "# Introduction\n\nStartFragmentThe WeaponShop API allows CRUD operations for managing weapons, customers, and orders in a weapon shop.EndFragment  \n  \n\n# Overview\n\nStartFragment\n\n- Built with **ASP.NET Core 6** and **Entity Framework Core**.\n    \n- Supports RESTful endpoints for **Weapons**, **Customers**, **Orders**, and **OrderedWeapon**.\n    \n- Database backed by **SQLite**.\n    \n- No authentication currently implemented.\n    \n\nEndFragment  \n  \n\n# Error Codes\n\nStartFragment\n\n### Common HTTP Status Codes:\n\n- **200 OK**: Successful request.\n    \n- **201 Created**: Resource created.\n    \n- **400 Bad Request**: Invalid data.\n    \n- **404 Not Found**: Resource not found.\n    \n- **500 Internal Server Error**: Server error.\n    \n- **403 Forbidden**: Auth error (if added later).\n    \n\n---\n\n  \n  \n\n# Rate limit\n\nStartFragmentNo rate limiting is implemented. Future implementations could add this feature.EndFragment",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "41985994"
+	},
+	"item": [
+		{
+			"name": "http://localhost:5104/api/roles",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "http://localhost:5104/api/roles",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5104",
+					"path": [
+						"api",
+						"roles"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Default",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://localhost:5104/api/roles",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5104",
+							"path": [
+								"api",
+								"roles"
+							]
+						}
+					},
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": null
+				}
+			]
+		},
+		{
+			"name": "http://localhost:5104/api/roles",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJza2lwcHl0ZXN0MjAyNUBnbWFpbC5jb20iLCJqdGkiOiJiMzBkMTU5Yy03NmU5LTQyY2YtYmZjZS0zMzE5ZGM2YzkxYzYiLCJodHRwOi8vc2NoZW1hcy5taWNyb3NvZnQuY29tL3dzLzIwMDgvMDYvaWRlbnRpdHkvY2xhaW1zL3JvbGUiOiJBZG1pbiIsImV4cCI6MTc0MDk5NzM3MiwiaXNzIjoiaHR0cDovL2xvY2FsaG9zdDo1MTA0IiwiYXVkIjoiaHR0cDovL2xvY2FsaG9zdDo1MTA0In0.BH1KsIGC0_E-cqWyOoYiXjHuG9bov9cRHpPPlghMbO0",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"Email\": \"skippytest2025@gmail.com\",\r\n\"Password\": \"Password123!\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5104/api/roles",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5104",
+					"path": [
+						"api",
+						"roles"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5104/api/roles",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"Email\": \"skippytest2025@gmail.com\",\r\n\"Password\": \"Password123!\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5104/api/roles",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5104",
+					"path": [
+						"api",
+						"roles"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5104/api/account/login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"Email\": \"skippytest2025@gmail.com\",\r\n\"Password\": \"Password123!\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5104/api/account/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5104",
+					"path": [
+						"api",
+						"account",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5104/api/weapons",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"UserId\": \"c3599250-fceb-4e5f-b65a-6524f80ae888\",\r\n    \"RoleName\": \"Admin\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5104/api/weapons",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5104",
+					"path": [
+						"api",
+						"weapons"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5104/api/roles/assign-role-to-user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"UserId\": \"c3599250-fceb-4e5f-b65a-6524f80ae888\",\r\n    \"RoleName\": \"Admin\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5104/api/roles/assign-role-to-user",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5104",
+					"path": [
+						"api",
+						"roles",
+						"assign-role-to-user"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5104/api/roles",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "\"Admin\"",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5104/api/roles",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5104",
+					"path": [
+						"api",
+						"roles"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5104/api/roles",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"Email\": \"skippytest2025@gmail.com\",\r\n\"Password\": \"Password123!\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5104/api/roles",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5104",
+					"path": [
+						"api",
+						"roles"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5104/api/weapons",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"Email\": \"skippytest2025@gmail.com\",\r\n\"Password\": \"Password123!\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5104/api/weapons",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5104",
+					"path": [
+						"api",
+						"weapons"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5104/api/roles",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"Email\": \"skippytest2025@gmail.com\",\r\n\"Password\": \"Password123!\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5104/api/roles",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5104",
+					"path": [
+						"api",
+						"roles"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5104/api/roles",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"Email\": \"skippytest2025@gmail.com\",\r\n\"Password\": \"Password123!\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5104/api/roles",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5104",
+					"path": [
+						"api",
+						"roles"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5104/api/roles",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"Email\": \"skippytest2025@gmail.com\",\r\n\"Password\": \"Password123!\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5104/api/roles",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5104",
+					"path": [
+						"api",
+						"roles"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5104/roles",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"Email\": \"skippytest2025@gmail.com\",\r\n\"Password\": \"Password123!\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5104/roles",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5104",
+					"path": [
+						"roles"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5104/api/account/login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"Email\": \"skippytest2025@gmail.com\",\r\n\"Password\": \"Password123!\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5104/api/account/login",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5104",
+					"path": [
+						"api",
+						"account",
+						"login"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5104/api/account/register",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"Email\": \"skippytest2025@gmail.com\",\r\n\"Password\": \"Password123!\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5104/api/account/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5104",
+					"path": [
+						"api",
+						"account",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5104/api/account/register",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5104/api/account/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5104",
+					"path": [
+						"api",
+						"account",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5104/api/catagories",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5104/api/catagories",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5104",
+					"path": [
+						"api",
+						"catagories"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5104/account/register",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\" : \"S&W M&P9 2.0\",\r\n    \"price\" : 699.00,\r\n    \"StockQuantity\" : 10,\r\n    \"categoryid\" : 3,\r\n    \"manufactuererid\" : 1\r\n    \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5104/account/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5104",
+					"path": [
+						"account",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5104/api/manufacturers",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"name\": \"SA-16A2 Rifle \",\r\n    \"price\": 1249.00,\r\n    \"stockQuantity\": 30,\r\n    \"categoryId\": 1, //\r\n    \"manufacturerId\": 4 \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5104/api/manufacturers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5104",
+					"path": [
+						"api",
+						"manufacturers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5104/api/weapons",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"name\": \"Sig 716 DMR G2 Sig Sauer 716\",\r\n    \"price\": 3300.00,\r\n    \"stockQuantity\": 5,\r\n    \"categoryId\": 4, //\r\n    \"manufacturerId\": 3 \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5104/api/weapons",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5104",
+					"path": [
+						"api",
+						"weapons"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5104/api/weapons",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"name\": \"Ruger MP9\",\r\n    \"price\": 399.99,\r\n    \"stockQuantity\": 30,\r\n    \"categoryId\": 2, //\r\n    \"manufacturerId\": 2 \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5104/api/weapons",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5104",
+					"path": [
+						"api",
+						"weapons"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5104/api/weapons",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"name\": \"Ruger MP9\",\r\n    \"price\": 399.99,\r\n    \"stockQuantity\": 30,\r\n    \"categoryId\": 2, //\r\n    \"manufacturerId\": 2 \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5104/api/weapons",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5104",
+					"path": [
+						"api",
+						"weapons"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5104/api/weapons",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"name\": \"SA-16A2 Rifle \",\r\n    \"price\": 1249.00,\r\n    \"stockQuantity\": 30,\r\n    \"categoryId\": 1, //\r\n    \"manufacturerId\": 4 \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5104/api/weapons",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5104",
+					"path": [
+						"api",
+						"weapons"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5104/api/catagories",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5104/api/catagories",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5104",
+					"path": [
+						"api",
+						"catagories"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5104/api/weapons",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"name\": \"Glock 19\",\r\n    \"price\": 637.99,\r\n    \"stockQuantity\": 20,\r\n    \"categoryId\": 3,\r\n    \"manufacturerId\": 5 \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5104/api/weapons",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5104",
+					"path": [
+						"api",
+						"weapons"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5104/api/weapons",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"name\": \"Glock 19\",\r\n    \"price\": 637.99,\r\n    \"stockQuantity\": 20,\r\n    \"categoryId\": 3,\r\n    \"manufacturerId\": 5 \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5104/api/weapons",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5104",
+					"path": [
+						"api",
+						"weapons"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5104/api/manufacturers",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"name\": \"S&W M&P9 2,0\",\r\n    \"price\": 699.00,\r\n    \"stockQuantity\": 10,\r\n    \"categoryId\": 3, //\r\n    \"manufacturerId\": 1 \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5104/api/manufacturers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5104",
+					"path": [
+						"api",
+						"manufacturers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5104/api/weapons",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"name\": \"S&W M&P9 2,0\",\r\n    \"price\": 699.00,\r\n    \"stockQuantity\": 10,\r\n    \"categoryId\": 3,\r\n    \"manufacturerId\": 1 \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5104/api/weapons",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5104",
+					"path": [
+						"api",
+						"weapons"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5104/api/manufacturers",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"name\": \"S&W M&P9 2,0\",\r\n    \"price\": 699.00,\r\n    \"stockQuantity\": 10,\r\n    \"categoryId\": 3, //\r\n    \"manufacturerId\": 1 \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5104/api/manufacturers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5104",
+					"path": [
+						"api",
+						"manufacturers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5104/api/weapons",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"name\": \"S&W M&P9 2,0\",\r\n    \"price\": 699.00,\r\n    \"stockQuantity\": 10,\r\n    \"categoryId\": 3,\r\n    \"manufacturerId\": 1 \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5104/api/weapons",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5104",
+					"path": [
+						"api",
+						"weapons"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5104/api/manufacturers",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"name\": \"S&W M&P9 2,0\",\r\n    \"price\": 699.00,\r\n    \"stockQuantity\": 10,\r\n    \"categoryId\": 3, //\r\n    \"manufacturerId\": 1 \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5104/api/manufacturers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5104",
+					"path": [
+						"api",
+						"manufacturers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5104/api/manufacturers",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"name\": \"S&W M&P9 2,0\",\r\n    \"price\": 699.00,\r\n    \"stockQuantity\": 10,\r\n    \"categoryId\": 3, //\r\n    \"manufacturerId\": 1 \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5104/api/manufacturers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5104",
+					"path": [
+						"api",
+						"manufacturers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5104/api/manufacturers",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"name\": \"S&W M&P9 2,0\",\r\n    \"price\": 699.00,\r\n    \"stockQuantity\": 10,\r\n    \"categoryId\": 3, //\r\n    \"manufacturerId\": 1 \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5104/api/manufacturers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5104",
+					"path": [
+						"api",
+						"manufacturers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5104/api/weapons",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"name\": \"S&W M&P9 2,0\",\r\n    \"price\": 699.00,\r\n    \"stockQuantity\": 10,\r\n    \"categoryId\": 3, //\r\n    \"manufacturerId\": 1 \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5104/api/weapons",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5104",
+					"path": [
+						"api",
+						"weapons"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5104/api/catagories",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5104/api/catagories",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5104",
+					"path": [
+						"api",
+						"catagories"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5104/api/weapons",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5104/api/weapons",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5104",
+					"path": [
+						"api",
+						"weapons"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5104",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5104",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5104"
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5104",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5104",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5104"
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5104/weapons",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5104/weapons",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5104",
+					"path": [
+						"weapons"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5104",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\" : \"S&W M&P9 2.0\",\r\n    \"price\" : 699.00,\r\n    \"StockQuantity\" : 10,\r\n    \"categoryid\" : 3,\r\n    \"manufactuererid\" : 1\r\n    \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5104",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5104"
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5104",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\" : \"S&W M&P9 2.0\",\r\n    \"price\" : 699.00,\r\n    \"StockQuantity\" : 10,\r\n    \"categoryid\" : 3,\r\n    \"manufactuererid\" : 1\r\n    \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5104",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5104"
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5104",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\" : \"S&W M&P9 2.0\",\r\n    \"price\" : 699.00,\r\n    \"StockQuantity\" : 10,\r\n    \"categoryid\" : 3,\r\n    \"manufactuererid\" : 1\r\n    \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5104",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5104"
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5104/api/",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\" : \"S&W M&P9 2.0\",\r\n    \"price\" : 699.00,\r\n    \"StockQuantity\" : 10,\r\n    \"categoryid\" : 3,\r\n    \"manufactuererid\" : 1\r\n    \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5104/api/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5104",
+					"path": [
+						"api",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5104/api/orders",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\" : \"S&W M&P9 2.0\",\r\n    \"price\" : 699.00,\r\n    \"StockQuantity\" : 10,\r\n    \"categoryid\" : 3,\r\n    \"manufactuererid\" : 1\r\n    \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5104/api/orders",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5104",
+					"path": [
+						"api",
+						"orders"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5104/api/categories",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\" : \"S&W M&P9 2.0\",\r\n    \"price\" : 699.00,\r\n    \"StockQuantity\" : 10,\r\n    \"categoryid\" : 3,\r\n    \"manufactuererid\" : 1\r\n    \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5104/api/categories",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5104",
+					"path": [
+						"api",
+						"categories"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5104/api/categories/",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\" : \"S&W M&P9 2.0\",\r\n    \"price\" : 699.00,\r\n    \"StockQuantity\" : 10,\r\n    \"categoryid\" : 3,\r\n    \"manufactuererid\" : 1\r\n    \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5104/api/categories/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5104",
+					"path": [
+						"api",
+						"categories",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5104/api/weapons",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"name\": \"S&W M&P9 2,0\",\r\n    \"price\": 699.00,\r\n    \"stockQuantity\": 10,\r\n    \"categoryId\": 3, //\r\n    \"manufacturerId\": 1 \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5104/api/weapons",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5104",
+					"path": [
+						"api",
+						"weapons"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5104/api/weapons",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"name\": \"S&W M&P9 2,0\",\r\n    \"price\": 699.00,\r\n    \"stockQuantity\": 10,\r\n    \"categoryId\": 3, //\r\n    \"manufacturerId\": 1 \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5104/api/weapons",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5104",
+					"path": [
+						"api",
+						"weapons"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5104/api/weapons",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"name\": \"S&W M&P9 2,0\",\r\n    \"price\": 699.00,\r\n    \"stockQuantity\": 10,\r\n    \"categoryId\": 3, //\r\n    \"manufacturerId\": 1 \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5104/api/weapons",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5104",
+					"path": [
+						"api",
+						"weapons"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5104/api/weapons",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"name\": \"S&W M&P9 2,0\",\r\n    \"price\": 699.00,\r\n    \"stockQuantity\": 10,\r\n    \"categoryId\": 3, //\r\n    \"manufacturerId\": 1 \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5104/api/weapons",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5104",
+					"path": [
+						"api",
+						"weapons"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5104/api/weapons",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"name\": \"AK-47\",\r\n    \"price\": 999.99,\r\n    \"stockQuantity\": 10,\r\n    \"categoryId\": 3, // ID of the category created in Step 1\r\n    \"manufacturerId\": 1 // ID of the manufacturer created in Step 2\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5104/api/weapons",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5104",
+					"path": [
+						"api",
+						"weapons"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5104/api/weapons",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\" : \"Assult Rifle\",\r\n    \"Description\" : \"Assault rifles are selective-fire weapons using intermediate cartridges that offer a balance of firepower and control.\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5104/api/weapons",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5104",
+					"path": [
+						"api",
+						"weapons"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5104/api/manufacturers",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\" : \"Assult Rifle\",\r\n    \"Description\" : \"Assault rifles are selective-fire weapons using intermediate cartridges that offer a balance of firepower and control.\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5104/api/manufacturers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5104",
+					"path": [
+						"api",
+						"manufacturers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5104/api/weapons",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\" : \"Assult Rifle\",\r\n    \"Description\" : \"Assault rifles are selective-fire weapons using intermediate cartridges that offer a balance of firepower and control.\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5104/api/weapons",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5104",
+					"path": [
+						"api",
+						"weapons"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5104/api/catagories",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\" : \"Assult Rifle\",\r\n    \"Description\" : \"Assault rifles are selective-fire weapons using intermediate cartridges that offer a balance of firepower and control.\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5104/api/catagories",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5104",
+					"path": [
+						"api",
+						"catagories"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5104/api/weapons",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\" : \"S&W M&P9 2.0\",\r\n    \"price\" : 699.00,\r\n    \"StockQuantity\" : 10,\r\n    \"categoryid\" : 3,\r\n    \"manufactuererid\" : 1\r\n    \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5104/api/weapons",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5104",
+					"path": [
+						"api",
+						"weapons"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5104/api/categories",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\" : \"S&W M&P9 2.0\",\r\n    \"price\" : 699.00,\r\n    \"StockQuantity\" : 10,\r\n    \"categoryid\" : 3,\r\n    \"manufactuererid\" : 1\r\n    \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5104/api/categories",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5104",
+					"path": [
+						"api",
+						"categories"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5104/api/categories/",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\" : \"S&W M&P9 2.0\",\r\n    \"price\" : 699.00,\r\n    \"StockQuantity\" : 10,\r\n    \"categoryid\" : 3,\r\n    \"manufactuererid\" : 1\r\n    \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5104/api/categories/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5104",
+					"path": [
+						"api",
+						"categories",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5104/api/categories/1",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\" : \"S&W M&P9 2.0\",\r\n    \"price\" : 699.00,\r\n    \"StockQuantity\" : 10,\r\n    \"categoryid\" : 3,\r\n    \"manufactuererid\" : 1\r\n    \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5104/api/categories/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5104",
+					"path": [
+						"api",
+						"categories",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5104/api/weapons",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\" : \"S&W M&P9 2.0\",\r\n    \"price\" : 699.00,\r\n    \"StockQuantity\" : 10,\r\n    \"categoryid\" : 3,\r\n    \"manufactuererid\" : 1\r\n    \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5104/api/weapons",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5104",
+					"path": [
+						"api",
+						"weapons"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5104/api/weapons",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\" : \"S&W M&P9 2.0\",\r\n    \"price\" : 699.00,\r\n    \"StockQuantity\" : 10,\r\n    \"categoryId\" : 3,\r\n    \"manufactuererId\" : 1\r\n    \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5104/api/weapons",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5104",
+					"path": [
+						"api",
+						"weapons"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5104/api/weapons",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\" : \"S&W M&P9 2.0\",\r\n    \"price\" : 699.00,\r\n    \"StockQuantity\" : 10,\r\n    \"category\" : \"Assult Rifle\",\r\n    \"manufactuererId\" : \"Smith & Wesson\"\r\n    \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5104/api/weapons",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5104",
+					"path": [
+						"api",
+						"weapons"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5104/api/weapons",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\" : \"S&W M&P9 2.0\",\r\n    \"price\" : 699.00,\r\n    \"StockQuantity\" : 10,\r\n    \"categoryId\" : 3,\r\n    \"manufactuererId\" : 1\r\n    \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5104/api/weapons",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5104",
+					"path": [
+						"api",
+						"weapons"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5104/api/weapons",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\" : \"GLOCK\",\r\n    \"Description\" : \"GLOCK, established in 1963, is an Austrian company known for producing semi-automatic pistols with polymer frames.\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5104/api/weapons",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5104",
+					"path": [
+						"api",
+						"weapons"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5104/api/manufacturers",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\" : \"GLOCK\",\r\n    \"Description\" : \"GLOCK, established in 1963, is an Austrian company known for producing semi-automatic pistols with polymer frames.\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5104/api/manufacturers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5104",
+					"path": [
+						"api",
+						"manufacturers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5104/api/manufacturers",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\" : \"Springfield Armory\",\r\n    \"Description\" : \"Springfield Armory, established in 1974, is a well-known American maker of firearms, recognized for its dependable rifles, handguns, and shotguns.\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5104/api/manufacturers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5104",
+					"path": [
+						"api",
+						"manufacturers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5104/api/manufacturers",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\" : \"SIG SAUER\",\r\n    \"Description\" : \"Established in 1853, SIG SAUER is a Swiss-German manufacturer known for producing premium pistols, rifles, and optical equipment.\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5104/api/manufacturers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5104",
+					"path": [
+						"api",
+						"manufacturers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5104/api/manufacturers",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\" : \"Ruger\",\r\n    \"Description\" : \"Sturm, Ruger & Co. began its journey in 1949 and has grown to be one of the leading firearms makers in the United States, recognized for its reliable and reasonably priced rifles, handguns, and shotguns.\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5104/api/manufacturers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5104",
+					"path": [
+						"api",
+						"manufacturers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5104/api/manufacturers",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\" : \"Smith & Wesson\",\r\n    \"Description\" : \"Smith & Wesson started back in 1852 and has become one of the top gun makers in America, famous for making dependable handguns, including revolvers and semi-automatic pistols.\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5104/api/manufacturers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5104",
+					"path": [
+						"api",
+						"manufacturers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5104/api/manufacturers",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\" : \"Shotguns\",\r\n    \"Description\" : \"Shotguns are smoothbore firearms that fire shells containing multiple pellets (shot) or a single slug.\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5104/api/manufacturers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5104",
+					"path": [
+						"api",
+						"manufacturers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5104/api/catagories",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\" : \"Shotguns\",\r\n    \"Description\" : \"Shotguns are smoothbore firearms that fire shells containing multiple pellets (shot) or a single slug.\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5104/api/catagories",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5104",
+					"path": [
+						"api",
+						"catagories"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5104/api/catagories",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\" : \"Sniper Rifle\",\r\n    \"Description\" : \"Sniper rifles are high-precision, long-range firearms designed for accuracy.\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5104/api/catagories",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5104",
+					"path": [
+						"api",
+						"catagories"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5104/api/catagories",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\" : \"Pistol\",\r\n    \"Description\" : \"Pistols are short-barreled, handheld firearms designed for one-handed use.\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5104/api/catagories",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5104",
+					"path": [
+						"api",
+						"catagories"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5104/api/catagories",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\" : \"Sub-Machine Gun\",\r\n    \"Description\" : \"Submachine guns (SMGs) are compact, fully automatic firearms that fire pistol cartridges.\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5104/api/catagories",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5104",
+					"path": [
+						"api",
+						"catagories"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5104/api/catagories",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\" : \"Assult Rifle\",\r\n    \"Description\" : \"Assault rifles are selective-fire weapons using intermediate cartridges that offer a balance of firepower and control.\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5104/api/catagories",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5104",
+					"path": [
+						"api",
+						"catagories"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5104/api/catagories",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\" : \"Assult Rifle\",\r\n    \"Description\" : \"Assault rifles are selective-fire weapons using intermediate cartridges that offer a balance of firepower and control.\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5104/api/catagories",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5104",
+					"path": [
+						"api",
+						"catagories"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5104/api/catagories",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5104/api/catagories",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5104",
+					"path": [
+						"api",
+						"catagories"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5104/api/weapons",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n     \"name\": \"AK-47\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5104/api/weapons",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5104",
+					"path": [
+						"api",
+						"weapons"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5104/api/weapons",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n     \"name\": \"AK-47\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5104/api/weapons",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5104",
+					"path": [
+						"api",
+						"weapons"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5104/api/customers",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n     \"name\": \"AK-47\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5104/api/customers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5104",
+					"path": [
+						"api",
+						"customers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5104/api/customers",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n     \"name\": \"AK-47\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5104/api/customers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5104",
+					"path": [
+						"api",
+						"customers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5104/api/customers",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n     \"name\": \"AK-47\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5104/api/customers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5104",
+					"path": [
+						"api",
+						"customers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5104/api/weapons",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n     \"Name\": \"AK-47\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5104/api/weapons",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5104",
+					"path": [
+						"api",
+						"weapons"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5104/api/weapons",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n     \"name\": \"AK-47\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:5104/api/weapons",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5104",
+					"path": [
+						"api",
+						"weapons"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5104/api/weapons",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5104/api/weapons",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5104",
+					"path": [
+						"api",
+						"weapons"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5104/weapons",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5104/weapons",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5104",
+					"path": [
+						"weapons"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5104",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5104",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5104"
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:5104",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:5104",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "5104"
+				}
+			},
+			"response": []
+		}
+	]
+}
